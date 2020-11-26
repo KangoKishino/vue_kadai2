@@ -1,6 +1,6 @@
 <template>
-    <div id="insurance-question" class="container card">
-        <h5>以下にお答えください</h5>
+    <div id="insurance-question"  class="mx-auto container card">
+        <h5>{{ msg }}</h5>
         <div class="text-left">
             <div>
                 <p>現在、生命保険に加入されていますか？</p>
@@ -36,6 +36,9 @@
 <script>
 export default{
     name: 'InsuranceQuestion',
+    props: {
+        msg: String
+    },
     computed: {
         isSign: {
             get() {

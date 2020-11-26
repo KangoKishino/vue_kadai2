@@ -1,5 +1,5 @@
 <template>
-    <div id="consultation-content" class="container card">
+    <div id="consultation-content" class="mx-auto container card">
         <h5>{{ msg }}</h5>
         <p class="text-left">-ご相談内容-</p>
         <textarea v-model="changeContent" rows="10" cols="60"></textarea>
@@ -23,7 +23,6 @@ export default{
         },
     }
 };
-  
 </script>
 <style scoped>
 </style>
