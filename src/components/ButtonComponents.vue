@@ -1,10 +1,10 @@
 <template>
 <div>
-    <div v-if="this.$route.path==='/'">
+    <div v-if="this.$route.path === '/'">
         <p v-if="errorMessage" class="error-message">{{ errorMessage }}</p>
-        <button v-if="$store.getters.nthQuestion!==1" @click="prevQuestion" class="btn btn-outline-primary">前へ戻る</button>
-        <button v-if="$store.getters.nthQuestion!==3" @click="nextQuestion" class="btn btn-outline-primary">次へ進む</button>
-        <button v-if="$store.getters.nthQuestion===3" @click="checkForm" class="btn btn-outline-primary">次へ進む</button>
+        <button v-if="$store.getters.nthQuestion !== 1" @click="prevQuestion" class="btn btn-outline-primary">前へ戻る</button>
+        <button v-if="$store.getters.nthQuestion !== 3" @click="nextQuestion" class="btn btn-outline-primary">次へ進む</button>
+        <button v-if="$store.getters.nthQuestion === 3" @click="checkForm" class="btn btn-outline-primary">次へ進む</button>
     </div>
     <div v-else>
         <router-link to="/" class="btn btn-outline-primary">前へ戻る</router-link>
