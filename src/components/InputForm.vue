@@ -1,5 +1,5 @@
 <template>
-    <div class="container card">
+    <div class="mx-auto container card">
         <h5>{{ msg }}</h5>
         <div class="text-left">
             <p>-性別-</p>
@@ -29,8 +29,8 @@
 </template>
 
 <script>
+
 export default{
-    name: 'InputForm',
     data() {
         return {
             days_max: '',
