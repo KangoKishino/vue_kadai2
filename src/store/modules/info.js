@@ -10,22 +10,6 @@ const state = {
     nthQuestion: 1
 }
 
-const getters = {
-    gender: state => state.gender,
-    year: state => state.year,
-    month: state => state.month,
-    day: state => state.day,
-    sign: state => state.sign,
-    hospitalize: state => state.hospitalize,
-    surgery: state => state.surgery,
-    content: state => state.content,
-    nthQuestion: state => state.nthQuestion
-}
-
-const actions = {
-    
-}
-
 const mutations = {
     changed(state, value) {
         state.gender = value
@@ -60,6 +44,21 @@ const mutations = {
     clearDay(state) {
         state.day = '';
     }
+}
+
+const getters = {
+    gender: state => state.gender,
+    year: state => state.year,
+    month: state => state.month,
+    day: state => state.day,
+    sign: state => state.sign,
+    hospitalize: state => state.hospitalize,
+    surgery: state => state.surgery,
+    content: state => state.content,
+    nthQuestion: state => state.nthQuestion
+}
+
+const actions = {
 }
 
 export default {

@@ -11,7 +11,7 @@
                     <input type="radio" v-model="isSign" value=false>いいえ
                 </label>
             </div>
-            <div v-if="this.$store.getters.sign !== ''">
+            <div v-if="this.$store.getters.sign">
                 <p>現在入院中ですか？または、最近3ヶ月以内に医師の診断・検査の結果、入院・手術をすすめられたことはありますか？</p>
                 <label>
                     <input type="radio" v-model="isHospitalize" value=true>はい
